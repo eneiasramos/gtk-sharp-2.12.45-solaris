@@ -6,6 +6,10 @@
 #ifndef GTKSHARP_VALOBJ_H
 #define GTKSHARP_VALOBJ_H 1
 
+#if defined(__sun__) && defined(__svr4__)
+#define __GI_SCANNER__ 1
+#endif
+
 #include <gtk/gtkwidget.h>
 #include <gtk/gtkenums.h>
 
